@@ -205,7 +205,7 @@ elif page == "Low Stock Alert":
     else:
         st.warning(f"Found {len(low_stock_items)} items below threshold")
         low_stock_df = pd.DataFrame(low_stock_items)
-        st.dataFrame(low_stock_df)
+        st.dataframe(low_stock_df)
 
 
 elif page == "Category Analysis":
