@@ -25,7 +25,7 @@ def add_product(name, price, quantity, category):
 
     # Add new category
     if category not in st.session_state.categories:
-        st.session_state.categories.category = []
+        st.session_state.categories[category] = []
     st.session_state.categories[category].append(product_id)
 
     st.session_state.next_product_id += 1
