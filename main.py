@@ -15,7 +15,7 @@ if "next_product_id" not in st.session_state:
 def add_product(name, price, quantity, category):
     product_id = st.session_state.next_product_id
     #Add new product
-    st.session_state.product[product_id] = {
+    st.session_state.products[product_id] = {
         'name': name,
         'price': price,
         'quantity': quantity,
