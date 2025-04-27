@@ -187,7 +187,7 @@ elif page == "Update Quantity":
                 if update_type == "Remove Stock":
                     quantity_change = -quantity_change
 
-                success, message = update_quantity([product_id, quantity_change])
+                success, message = update_quantity(product_id, quantity_change)
                 if success:
                     st.success(message)
                 else:
