@@ -108,7 +108,7 @@ if page == "Add Product":
 
     with st.form("Add Product Form"):
         name = st.text_input("Product Name")
-        price = st.number_input("Price of product", min=100, step= 10)
+        price = st.number_input("Price of product", min_value=100, step= 10)
         quantity = st.number_input("Quantity of product", min=10)
         
         
