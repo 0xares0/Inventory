@@ -169,7 +169,7 @@ elif page == "Update Quantity":
     if not st.session_state.products:
         st.info("No products in inventory yet. Add some products first")
     else:
-        product_ids = list(st.session_srare.products.keys())
+        product_ids = list(st.session_state.products.keys())
         product_names = [f"ID {pid}: {st.session_state.products[pid]['name']}" for pid in product_ids]
 
         selected_product = st.selectbox("Select Product", [""] + product_names)
