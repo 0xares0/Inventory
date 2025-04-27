@@ -216,7 +216,7 @@ elif page == "Category Analysis":
     else:
         category_data = []
         for category in st.session_state.categories:
-            product_count = len(st.session_state.categpries[category])
+            product_count = len(st.session_state.categories[category])
             total_value = get_category_value(category)
 
             category_data.apppend({
