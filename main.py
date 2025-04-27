@@ -36,7 +36,7 @@ def update_quantity(product_id, quantity_change):
     if product_id == st.session_state.products[product_id]:
         return False, f"Product Not Found"
 
-    new_quantity = st.session_sttate.products[product_id]['quantity'] + quantity_change
+    new_quantity = st.session_state.products[product_id]['quantity'] + quantity_change
 
     if new_quantity < 0:
         return False, f"Insufficient stock"
