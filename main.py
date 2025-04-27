@@ -219,7 +219,7 @@ elif page == "Category Analysis":
             product_count = len(st.session_state.categories[category])
             total_value = get_category_value(category)
 
-            category_data.apppend({
+            category_data.append({
                 "Category": category,
                 "Product Count": product_count,
                 "Total Value": f"${total_value:.2f}"
