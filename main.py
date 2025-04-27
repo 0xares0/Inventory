@@ -55,7 +55,7 @@ def list_low_stock(threshold=5):
 
     for product_id, details in st.session_state.products.items():
         if details['quantity'] <= threshold:
-            low_stock.append = ({
+            low_stock.append({
                 'product_id': product_id,
                 'name': details['name'],
                 'quantity': details['quantity']
