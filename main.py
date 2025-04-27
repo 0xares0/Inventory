@@ -84,7 +84,7 @@ def delete_product(product_id):
         if product_id in st.session_state.categories[category]:
             st.session_state.categories[category].remove(product_id)
 
-    del st.session.state.products[product_id]
+    del st.session_state.products[product_id]
     return True, "Product deleted successfully"
 
 def get_products_dataframe():
