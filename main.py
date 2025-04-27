@@ -116,7 +116,7 @@ if page == "Add Product":
 
         category_option = st.selectbox(
             "Category", 
-            options=["Select a Category"] + existing_categories + ["Add New Categories"]
+            options=["Select a Category"] + existing_categories + ["Add New Category"]
             )
     
         new_category = ""
